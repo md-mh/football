@@ -34,7 +34,9 @@ p {
 .button:hover{
     background-color: tomato;
 }
-
+.fab, .fas{
+    padding: 0 3px;
+}
 /*-------------------
     header section 
  --------------------*/
@@ -89,7 +91,7 @@ header{
 .players{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    margin: 70px 12% 150px;
+    margin: 70px 12%;
 }
 .player {
     margin: 15px;
@@ -102,4 +104,24 @@ h3 {
     line-height: 40px;
     margin: 16px 0 10px;
     color: #18191F;
+}
+
+/* -----------------
+     footer section
+-------------------- */
+footer{
+    text-align: center;
+    margin: 70px 0;
+}
+footer img {
+    position: static;
+    width: 483.87px;
+    height: 110px;
+}
+footer a {
+    color: gray;
+    background-color: #ddd;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 0 5px;
 }
