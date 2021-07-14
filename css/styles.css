@@ -148,7 +148,7 @@ header{
 
 /* upcoming match */
 .upcoming{
-    margin: 70px 12%;
+    margin: 70px 0;
     text-align: center;
 }
 .upcoming h2{
