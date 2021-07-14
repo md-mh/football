@@ -1,33 +1,65 @@
-@media only screen and (max-width: 668px){
 
-/* .menu-items{
-    position: absolute;
-    right: 0;
-    top: 87px;
-    visibility: hidden;
-    background-color: white;
+/*---------------------------------------------------------
+     responsive for mobile display where max width 667px
+----------------------------------------------------------- */
+@media only screen and (max-width: 667px){
+    /* .menu-items{
+        position: absolute;
+        right: 0;
+        top: 87px;
+        visibility: hidden;
+        background-color: white;
+    }
+    menu-items ul {
+        list-style: none;
+        display: block;
+        padding: 0;
+    }
+    #yes:checked ~ .menu-items{
+        visibility: visible;
+    } */
+
+
+    .cover, .players, .highlights, .latest-news{
+        display: flex;
+        flex-direction: column;
+    }
+    .cover-heading, .highlights-contain{
+        margin-bottom: 50px;
+    }
+    footer img {
+        position: static;
+        width: 242px;
+        height: 55px;
+    }
+
 }
-menu-items ul {
-    list-style: none;
-    display: block;
-    padding: 0;
-}
-#yes:checked ~ .menu-items{
-    visibility: visible;
-} */
 
+/*---------------------------------------------------------
+     responsive for mobile display where max width 668px
+----------------------------------------------------------- */
+@media only screen and (min-width: 668px) and (max-width: 991px){
 
- .cover, .players, .highlights, .latest-news{
-    display: flex;
-    flex-direction: column;
-}
-.cover-heading, .highlights-contain{
-    margin-bottom: 50px;
-}
-
-
-
-
-
-
+    .cover, .players, .highlights, .latest-news{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cover h1 {
+        font-size: 44px;
+        line-height: 40px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    .highlights h2{
+        font-size: 28px;
+        line-height: 30px;
+    }
+    .highlights img{
+        height: 100%;
+    }
+    footer img {
+        position: static;
+        width: 242px;
+        height: 55px;
+    }
 }

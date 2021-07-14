@@ -131,8 +131,12 @@ header{
     grid-gap: 15px;
     margin: 15px;
     padding: 15px;
-    border-radius: 15px;
+    border-radius: 10px;
     box-shadow: 0 0 10px #ddd;
+}
+.news img{
+    height: 100%;
+    border-radius: 10px;
 }
 .news h4 {
     font-size: 18px;
