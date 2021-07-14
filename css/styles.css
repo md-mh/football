@@ -1,0 +1,85 @@
+/* import font from google */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+
+/* common styles */
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+h1 {
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.button{
+    background-color: #E02C6D;
+    padding: 10px 24px;
+}
+.button:hover{
+    background-color: tomato;
+}
+
+/*-------------------
+    header section 
+ --------------------*/
+header{
+    background-color: #2D25A0;
+    color: white;
+    padding: 40px 12%;
+}
+
+/* header menu section */
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0 40px;
+
+}
+.menu-items ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+.menu-items ul li a{
+    padding: 10px 25px 10px 0;
+}
+/* header cover section */
+.cover {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.cover-heading{
+    width: 45%;
+}
+.cover-img{
+    width: 55%;
+    padding-left: 40px;
+}
+.cover:hover > .cover-img img{
+    transform: rotate(360deg);
+    transition: 5s;
+}
+
+
+
+/*-----------------
+    main section 
+ ------------------*/
+
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 70px 12% 150px;
+}
