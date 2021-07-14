@@ -16,12 +16,6 @@ a{
     text-decoration: none;
     color: white;
 }
-h1 {
-    font-size: 60px;
-    line-height: 80px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
 p {
     font-size: 16px;
     line-height: 26px;
@@ -65,16 +59,15 @@ header{
 
 /* header cover section */
 .cover {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     padding: 40px 0;
 }
-.cover-heading{
-    width: 45%;
-}
-.cover-img{
-    width: 55%;
-    padding-left: 40px;
+.cover h1 {
+    font-size: 64px;
+    line-height: 80px;
+    font-weight: 700;
+    margin-bottom: 20px;
 }
 .cover:hover > .cover-img img{
     transform: rotate(360deg);
@@ -99,11 +92,51 @@ header{
     text-align: justify;
     box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
 }
-h3 {
+.player h3 {
     font-size: 28px;
     line-height: 40px;
     margin: 16px 0 10px;
     color: #18191F;
+}
+
+
+/* Highlight copa America */
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5%;
+    padding: 70px 10%;
+}
+.highlights h2{
+    font-size: 48px;
+    line-height: 60px;
+}
+
+/* latest news section */
+.news-list{
+    margin: 70px 12%;
+}
+.news-list h2{
+    font-size: 48px;
+    line-height: 60px;
+    text-align: center;
+}
+.latest-news{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.news {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px #ddd;
+}
+.news h4 {
+    font-size: 18px;
+    margin: 10px 0;
 }
 
 /* -----------------
@@ -118,7 +151,7 @@ footer img {
     width: 483.87px;
     height: 110px;
 }
-footer a {
+footer p a {
     color: gray;
     background-color: #ddd;
     border-radius: 15px;
