@@ -145,6 +145,29 @@ header{
     margin: 10px 0;
 }
 
+
+/* upcoming match */
+.upcoming{
+    padding: 70px 12%;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+}
+.upcoming h2{
+    font-size: 48px;
+    line-height: 60px;
+}
+table {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ddd;
+}
+th, td {
+    padding: 10px;
+    font-size: 20px;
+}
+
 /* -----------------
      footer section
 -------------------- */
