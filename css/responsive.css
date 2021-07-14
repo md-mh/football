@@ -3,23 +3,36 @@
      responsive for mobile display where max width 667px
 ----------------------------------------------------------- */
 @media only screen and (max-width: 667px){
-    /* .menu-items{
-        position: absolute;
-        right: 0;
-        top: 87px;
-        visibility: hidden;
-        background-color: white;
+
+    /* menu bar  */
+    .btn .check{
+        display: block;
+        font-size: xx-large;
+        text-align: left;
     }
-    menu-items ul {
+    .menu-items{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 100px;
+        visibility: hidden;
+    }
+    .menu-items ul {
         list-style: none;
         display: block;
-        padding: 0;
+        width: 100%;
+        padding: 20px;
+        background-color: blue;
+    }
+    .menu-items ul li {
+        margin: 10px;
+        font-size: 22px;
     }
     #yes:checked ~ .menu-items{
         visibility: visible;
-    } */
-
-
+    }
+    /* menu bar end  */
+    
     .cover, .players, .highlights, .latest-news{
         display: flex;
         flex-direction: column;
@@ -40,9 +53,44 @@
 ----------------------------------------------------------- */
 @media only screen and (min-width: 668px) and (max-width: 991px){
 
-    .cover, .players, .highlights, .latest-news{
+    
+    /* menu bar  */
+    .btn .check{
+        display: block;
+        font-size: xx-large;
+        text-align: left;
+    }
+    .menu-items{
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        top: 100px;
+        visibility: hidden;
+    }
+    .menu-items ul {
+        list-style: none;
+        display: block;
+        width: 100%;
+        padding: 20px;
+        background-color: blue;
+    }
+    .menu-items ul li {
+        margin: 10px;
+        font-size: 22px;
+    }
+    #yes:checked ~ .menu-items{
+        visibility: visible;
+    }
+    /* menu bar end  */
+
+    
+    .cover, .players, .highlights{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+    }
+    .latest-news{
+        display: flex;
+        flex-direction: column;
     }
     .cover h1 {
         font-size: 44px;

@@ -55,7 +55,9 @@ header{
 .menu-items ul li a{
     padding: 10px 25px 10px 0;
 }
-
+#yes, .check{
+    display: none;
+}
 
 /* header cover section */
 .cover {
